@@ -1,3 +1,5 @@
+#This is a tree-search recursion function that calls itself to search through every possible path in a dog's family tree until the age criteria in "isTooOld.py" is met, or a dog is identified as DDR. The function tracks how many generations back the dog is in the lineage by using the "generationCount" variable, and once the DDR dog is found, the percentage of ancestry that dog contributes to the DDR-ness of the dog is calculated and totalled. through all function calls. this script will call itself X stack times, equal to the number of generations it is searching for hitting exit criteria. This function runs for every dog in the lineage.
+
 from isDDR import *
 from findParents import *
 from isTooOld import *
