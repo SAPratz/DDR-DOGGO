@@ -1,3 +1,5 @@
+#this function identifies the parents of a dog in PDB, and returns the URL of the mother and father in PDB to be handled for other functions. If there are no parents found, the returned URL will be Horand von Schwaben, which will exceed any isTooOld.py criteria, and will terminate searching that line at the missing parent in PDB.
+
 def findParents(child_url_string = ''):
 
     import requests
