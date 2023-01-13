@@ -1,3 +1,5 @@
+#this function is designed to query PBD to determine if the dog's age is above the age threshold for the search.
+#if the dog's birth year is not found in PDB, it will automatically populate it with a birth year of 2000, and proceed until it does find a dog with a listed birth date.
 def isTooOld(child_url_string = ''):
 
     import time
