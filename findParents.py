@@ -8,7 +8,7 @@ def findParents(child_url_string = ''):
         MainDogURL = input("Enter Dog's PDB Website URL: ")
         r = requests.get(MainDogURL)
         content = r.content
-        soup = BeautifulSoup(content, features="lxml")
+        soup = BeautifulSoup(content, "html.parser")
         #print(soup)
 
         mom_dad = []
@@ -39,7 +39,7 @@ def findParents(child_url_string = ''):
         MainDogURL = child_url_string
         r = requests.get(MainDogURL)
         content = r.content
-        soup = BeautifulSoup(content, features="lxml")
+        soup = BeautifulSoup(content, "html.parser")
         # print(soup)
 
         mom_dad = []
