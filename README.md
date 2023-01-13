@@ -9,7 +9,7 @@ To run this code, simply run the "findDDR(dogName= '', generationCount = 0)" fun
   
 There is a file called "MAIN.py" that simply imports the main recursive function, and calls the function.
 
-Example call for running the program, and printing DDR-ness of a dog to console:
+Example call for running the program, and printing DDR-ness of a dog to console, simply run the findDDR() function with the PDB URL of the dog, and generation count parameter blank (this is used for recursive calling of the findDDR function and tracking the current generation):
 
 print(findDDR('https://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=3117544-qui-vive-hektor-von-sentinelharts?_v=20211107093250'))
 
@@ -21,5 +21,6 @@ if int(yearBorn) < 1970:   <--- Set "1970" to whatever value you would like to s
 
 Depending on the information contained in PDB, the process may fail. I have actually caught issues with lineage in PDB because of this program entering endless loops (a grand-child was the parent of the grandparents in another line- impossible scenario). If you find issues with lines, you can email PDB and they will fix the lines. You can also comment on the dog in issue and usually the "owner" will fix it (or if there is no owner, you can fix it). Sometimes it was just a mistyped dog's name when someone entered a new dog's parents into PDB.
 
-
+the last line in the script printed to console wil be a decimal number. Multiply by 100, and that is the percent, i.e.:
+0.5 (in last line of script after completion) = 50% DDR dog
 
